@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="niyi.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Demo Form</h1>
+    </header>
+    <main>
+        <form action="/" method="GET">
+            <section>
+                <h2>Your personal details</h2>
+                <ul>
+                    <li>
+<label for="username">Your name</label>
+<input type="text" name="User-name" id="username" required placeholder="niyi">
+                    </li>
+                    <li>
+<label for="user-email">Your email address</label>
+<input type="email" name="user-email" id="user-email" required>
+                    </li>
+                    <li>
+<label for="userpassword">Your password</label>
+<input type="password" name="user-password" id="userpassword" required minlength="8">
+                    </li>
+                </ul>
+ </section>
+    
+<section>
+    <h2>More details</h2>
+<ul>
+    <li>
+<label for="Userage">Your age</label>
+ <input type="number" step="1" name="user-age" id="Userage" required min="18" max="100">
+    </li>
+    <li>
+<label for="birthdate"></label>
+<input type="date" name="user-birthdate" id="birthdate" required max="19-05-2006" min="19-05-1900">
+    </li>
+    <li>
+<label for="favourite-colour">Your favourite colour</label> <select name="favourite-colour" id="favourite-colour" required>
+            <option value="blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="orange">Orange</option>
+        </select>
+    </li>
+</ul>
+</section>
+
+<section>
+    <label for="usermessage">Your message</label>
+    <textarea name="user-message" id="usermessage" required rows="8"></textarea>
+</section>
+
+<section>
+    <h2>How should we verify your account?</h2>
+    <ul>
+        <li class="niyi">
+            <input type="radio"
+            name="verify" 
+            id="verify text message" 
+            value="verify text "
+            required>
+           <label for="verify text message">via text messag(SMS)</label>
+        </li>
+        <li class="niyi">
+            <input type="radio" 
+            name="verify" 
+            id="verify phone call" 
+            value="verify phone"
+            required>
+            <label for="verify phone call">via a phone call</label>
+        </li>
+        <li class="niyi">
+            <input type="radio" 
+            name="verify" 
+            id="verify email" 
+            value="verify email"
+            required>
+        <label for="verify email">via an email</label>  
+        </li>
+    </ul>
+    <section>
+        <h2>How Should we contact you?</h2>
+        <ul>
+            <li class="niyi">
+                <input type="checkbox"
+                name="contact"
+                id="email"
+                value="contact through email">
+                <label for="email">Contact me via email</label>
+             </li>
+             <li class="niyi">
+                <input type="checkbox"
+                name="contact"
+                id="phone"
+                value="contact through phone">
+                <label for="phone">Contact me via phone</label>
+             </li>
+             
+        </ul>
+    </section>
+<hr>
+    <div class="niyi">
+     <input type="checkbox" id="agree-terms" name="terms">
+     <label for="agree-terms">Agree to terms</label>
+    </div>
+</section>
+
+     <section>
+        <button type="submit">submit</button> 
+     </section>
+</form> 
+      </main>
+            </body>
+</html>
+
